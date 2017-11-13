@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Matthew Sullivan</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="../assets/css/normalize.css">
+  <link rel="stylesheet" type="text/css" href="../assets/css/portfolio.css">
+  <link href="https://fonts.googleapis.com/css?family=Amarante" rel="stylesheet">
+</head>
+
+<body>
+  <div class="headerWrapper">
+    <header>
+      <div class="panel">
+        <h1>Thousandstorms.com</h1>
+        <hr>
+        <h2>Developer's Blog</h2>
+        <div class="btnWrapper">
+          <a href="./index.html">
+            <button class="btnLarge">
+              <h3>About</h3>
+            </button>
+          </a>
+          <a href="./blog.html">
+            <button class="btnLarge">
+              <h3>Blog</h3>
+            </button>
+          </a>
+          <a href="./projects.html">
+            <button class="btnLarge">
+              <h3>Projects</h3>
+            </button>
+          </a>
+        </div>
+      </div>
+    </header>
+  </div>
+  <main class="wrapper fadeIn">
+    <div class="panel panelBlog">
+      <h2 class="headerBlog">Project Planning (11/01/2017)</h2>
+      <hr>
+      <p>
+        My next project is coming up at the end of the week and I need to begin planning. I know I want to do a 3d game but this time I'm on my own. It's going to be a challenge.
+      </p>
+      <p>
+        My initial thought was to design a space-themed game. I've been watching Star Trek: Next Generation on Netflix lately and it made me realize there aren't a lot of (if any) voice-activated spaceship bridge simulations. So let's do this: the player takes the role of a captain on a large ship, not an interceptor. The crew handles maneuvering, weapons targeting, shields, etc. while the captain requests these actions.
+      </p>
+      <p>Sample Command List:
+        <br>"Helm, plot a course to [Asteroid 02]"
+        <br>"Tactical, battle stations"
+        <br>"Comms, hail [Neutral Ship 05]"
+      </p>
+    </div>
+    <div class="panel panelBlog">
+      <h2 class="headerBlog">At the Foot of the Hill (10/26/2017)</h2>
+      <hr>
+      <p>
+        In the aftermath of my first game project, Firewall Penitentiary, I'm left with a number of lessons regarding development:
+      </p>
+      <p>
+        First, I realize I should have handled all of the synchronization physics (players killed, ball drops, projectile locations, etc.) on the Server side of the game. The reason I didn't was due to the fact that F.P. was developed first as a single player game and then, once that version was stable, was upgraded to a multiplayer version. The timeframe for the project was two weeks and I was handling technologies I'd never used before, including <a class="inlineLink" href="http://socket.io/" target="blank_">Socket.io</a> and the <a class="inlineLink" href="http://phaser.io/" target="blank_">Phaser Game Engine</a>, so I wasn't even sure what was possible. (As a note, I love Phaser and would definitely use it again on 2d projects with Javascript. It's strongly supported by a great community who have run into just about every bug out there.)
+      </p>
+      <p>
+        Second, as team lead I should have delegated more but, due to the timeframe, I handled more and delegated less. Why? My team was assigned to me and I had no idea of their skills or experience before we began. I had to just assign tasks and hope people could keep up. I started off small, asking team members to research how to perform certain actions with the Phaser Engine and used their results as a way to gauge what their next task should be. I kept up this process throughout the project while I worked on the more complex algorithms.
+      </p>
+      <p>
+        As it turned out, none of them had game development experience but they gave it their all anyway. We held regular meetings and there were several midnight stress tests I'll remember for years to come. Regardless of how we got there, we were there and our first game was done.
+      </p>
+    </div>
+  </main>
+  <div class="footerWrapper">
+    <footer>
+      <div class="panel">
+        <h3>©Copyright 2017 - Matthew Sullivan</h3>
+      </div>
+    </footer>
+  </div>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script type="text/javascript" src="../assets/js/scriptAlpha.js"></script>
+</body>
+
+</html>

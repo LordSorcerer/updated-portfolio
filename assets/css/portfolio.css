@@ -1,0 +1,328 @@
+body {
+  background-color: #261275;
+  color: silver;
+  font-family: Amarante;
+}
+
+hr {
+  width: 50%;
+  margin: 3% auto;
+  color: silver;
+}
+
+header {}
+
+a {
+  width: 100%;
+  text-decoration: none;
+  color: silver;
+}
+
+a:hover {
+  -webkit-animation: linkFade 1.5s;
+  /* Safari, Chrome and Opera > 12.1 */
+  -moz-animation: linkFade 1.5s;
+  /* Firefox < 16 */
+  -ms-animation: linkFade 1.5s;
+  /* Internet Explorer */
+  -o-animation: linkFade 1.5s;
+  /* Opera < 12.1 */
+  animation: linkFade 1.5s;
+  animation-iteration-count: infinite;
+}
+
+p {
+  font-size: 20px;
+}
+
+.hexImage {
+  margin: 0% 1.5%;
+  width: 40%;
+}
+
+.inlineLink {
+  text-decoration: underline;
+  color: lightblue;
+}
+
+.wrapper {
+  width: 100%;
+  display: inline-flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.btnLarge {
+  width: 25%;
+  border: silver 2px solid;
+  font-family: Amarante;
+  background-color: #261275;
+  color: silver;
+  border-radius: 50px;
+  margin: 1%;
+  outline: none;
+}
+
+.btnSmall {
+  width: 40%;
+  border: silver 2px solid;
+  font-family: Amarante;
+  background-color: #261275;
+  color: silver;
+  border-radius: 50px;
+  margin: 1%;
+  outline: none;
+}
+
+.headerWrapper,
+.footerWrapper {
+  width: 960px;
+  margin: 1% auto;
+}
+
+.panel {
+  width: 90%;
+  border: silver 2px solid;
+  border-radius: 50px;
+  color: silver;
+  background-color: black;
+  margin: 1%;
+  padding: 1%;
+  text-align: center;
+}
+
+
+.panelBlog {
+  width: 85%;
+  padding: 3%;
+  text-align: left;
+}
+
+.panelProject {
+  width: 89%;
+}
+
+.panelAbout {
+  width: 65%;
+}
+
+.panelContact {
+  width: 20%;
+}
+
+.headerBlog {
+  text-align: center;
+}
+
+.projectImage {
+  border: silver 2px solid;
+  border-radius: 50px;
+  position: relative;
+  width: 100%;
+}
+
+.projectImageLarge {
+  width: 45%;
+  height: 22.5%;
+  margin: 2%;
+  position: relative;
+}
+
+.projectImageSmall {
+  width: 28%;
+  height: 28%;
+  margin: 2%;
+  position: relative;
+}
+
+.formField {
+  background-color: #261275;
+  border-radius: 50px;
+  border: silver 2px solid;
+  color: silver;
+  padding: 2%;
+  text-align: center;
+}
+
+.projectLabel {
+  color: white;
+  width: 90%;
+  height: 50%;
+  font-size: 20px;
+  text-align: center;
+  position: absolute;
+  z-index: 5;
+  top: 0%;
+  left: 2%;
+  padding: 2%;
+  word-wrap: break-word;
+  visibility: hidden;
+  text-shadow: 3px 0px black;
+}
+
+.hexagon {
+  color: silver;
+  width: 100px;
+  height: 50px;
+  background: #261275;
+  position: relative;
+  border: none;
+}
+
+.hexagon:before {
+  content: "";
+  position: absolute;
+  top: -25px;
+  left: 0;
+  width: 0;
+  height: 0;
+  border-left: 50px solid transparent;
+  border-right: 50px solid transparent;
+  border-bottom: 25px solid #261275;
+}
+
+.hexagon:after {
+  content: "";
+  position: absolute;
+  bottom: -25px;
+  left: 0;
+  width: 0;
+  height: 0;
+  border-left: 50px solid transparent;
+  border-right: 50px solid transparent;
+  border-top: 25px solid #261275;
+}
+
+
+.fadeIn {
+  -webkit-animation: fadein 2s;
+  /* Safari, Chrome and Opera > 12.1 */
+  -moz-animation: fadein 2s;
+  /* Firefox < 16 */
+  -ms-animation: fadein 2s;
+  /* Internet Explorer */
+  -o-animation: fadein 2s;
+  /* Opera < 12.1 */
+  animation: fadein 2s;
+}
+
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+
+
+/* Firefox < 16 */
+
+@-moz-keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+
+
+/* Safari, Chrome and Opera > 12.1 */
+
+@-webkit-keyframes fadein {
+  0% {
+     opacity: 1;
+  }
+  50% {
+    opacity: 0.25;
+  }
+  100% {
+     opacity: 1;
+  }
+}
+
+
+
+/* Internet Explorer */
+
+@-ms-keyframes fadein {
+  0% {
+     opacity: 1;
+  }
+  50% {
+    opacity: 0.25;
+  }
+  100% {
+     opacity: 1;
+  }
+}
+
+
+
+
+
+/*Controls hover on links*/
+
+@keyframes linkFade {
+  0% {
+     opacity: 1;
+  }
+  50% {
+    opacity: 0.25;
+  }
+  100% {
+     opacity: 1;
+  }
+}
+
+
+
+/* Firefox < 16 */
+
+@-moz-keyframes linkFade {
+  0% {
+     opacity: 1;
+  }
+  50% {
+    opacity: 0.25;
+  }
+  100% {
+     opacity: 1;
+  }
+}
+
+
+
+/* Safari, Chrome and Opera > 12.1 */
+
+@-webkit-keyframes linkFade {
+  0% {
+     opacity: 1;
+  }
+  50% {
+    opacity: 0.25;
+  }
+  100% {
+     opacity: 1;
+  }
+}
+
+
+
+/* Internet Explorer */
+
+@-ms-keyframes linkFade {
+  0% {
+     opacity: 1;
+  }
+  50% {
+    opacity: 0.25;
+  }
+  100% {
+     opacity: 1;
+  }
+}
