@@ -5,95 +5,112 @@
   <title>Matthew Sullivan</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" type="text/css" href="../assets/css/normalize.css">
+  <link rel="stylesheet" type="text/css" href="../assets/css/materialize.min.css">
   <link rel="stylesheet" type="text/css" href="../assets/css/portfolio.css">
   <link href="https://fonts.googleapis.com/css?family=Amarante" rel="stylesheet">
 </head>
 
 <body>
-  <div class="headerWrapper">
-    <header>
-      <div class="panel">
-        <h1>Thousandstorms.com</h1>
-        <hr>
-        <h2>Developer's Blog</h2>
-        <div class="btnWrapper">
-          <a href="./index.html">
-            <button class="btnLarge">
-              <h3>About</h3>
-            </button>
-          </a>
-          <a href="./blog.html">
-            <button class="btnLarge">
-              <h3>Blog</h3>
-            </button>
-          </a>
-          <a href="./projects.html">
-            <button class="btnLarge">
-              <h3>Projects</h3>
-            </button>
-          </a>
+  <header class="container">
+    <div class="row">
+      <div class="col s12 m10">
+        <div class="panel">
+          <img class="responsive-img imgLogo" src="../assets/graphics/tstormsLogo.png">
+          <hr>
+          <div>
+            <a href="./index.html">
+              <button class="btnLarge">
+                <h3 class="flow-text">About</h3>
+              </button>
+            </a>
+            <a href="./blog.html">
+              <button class="btnLarge">
+                <h3 class="flow-text">Blog</h3>
+              </button>
+            </a>
+            <a href="./projects.html">
+              <button class="btnLarge">
+                <h3 class="flow-text">Projects</h3>
+              </button>
+            </a>
+          </div>
         </div>
       </div>
-    </header>
-  </div>
-  <main class="wrapper fadeIn">
-    <div class="panel panelBlog">
-      <h2 class="headerBlog">And we're ... done? (12/04/2017)</h2>
-      <hr>
-      <img style="float:left;width:33%;margin-right: 2%" src="../assets/graphics/fotr1.png" alt="Flight of the Rubicon Image 1">
-      <p>
-        The past two weeks have flown by.  The project came together quickly, broke and was fixed a few times but all the parts are working at this point!  The "game" has basic functionality in that you can log in, fly around in three dimensions and shoot down fighter craft.  I even added in a basic AI for the KillSat turrets near Mars.  Right now they simply turn to face whatever enters their detection range until it leaves, then they search for a new target. I've noticed that they also turn to "look at" the player's Proton Cannon shells as they fly by.  Something to work on.
-      </p>
-      <p>
-        This project is definitely going to be a work in progress for a while because I have to focus on Web development in the near future but I'll come back to <a class="inlineLink" href="http://alexcpeterson.com/spacescape/" target="blank_">Flight of the Rubicon</a> at some point.
-      </p>
-      
-    </div>
-    <div class="panel panelBlog">
-      <h2 class="headerBlog">Unity is Amazing (11/22/2017)</h2>
-      <hr>
-      <img style="float:right;width:33%;margin-left: 3%" src="../assets/graphics/fotr3.png" alt="Flight of the Rubicon Image 3">
-      <p>
-        I've only been working with the Unity engine for a couple of days but I already have models moving around the screen via keyboard commands.  It turns out the documentation is great and there are helpful tutorials for many, many aspects of game development.
-      </p>
-      <p>
-        I've also managed to get the "skybox" (or "starbox" since it's a space sim) working now.  I found a program called <a class="inlineLink" href="http://alexcpeterson.com/spacescape/" target="blank_">Spacescape</a> that takes a starfield image and splits it into the six sides of a cube.  Granted, it's not a perfect solution because a cube isn't a sphere but with the timeframe of this project I'm not going to be picky.  Thank you, Alex Peterson, for making Spacescape!
-      </p>
-      <p>
-        I've noticed that Unity uses a very modular, OOP style setup where each in-game object has scritps attached to it so that they can be reused in other parts of the game or even other games entirely.  I'm pretty impressed.
-      </p>
-      
-    </div>
-    <div class="panel panelBlog">
-      <h2 class="headerBlog">Project Planning (11/01/2017)</h2>
-      <hr>
-      <p>
-        My next project is coming up at the end of the week and I need to begin planning. I know I want to do a 3d game but this time I'm on my own. It's going to be a challenge.
-      </p>
-      <p>
-        My initial thought was to design a space-themed game. I've been watching Star Trek: Next Generation on Netflix lately and it made me realize there aren't a lot of (if any) voice-activated spaceship bridge simulations. So let's do this: the player takes the role of a captain on a large ship, not an interceptor. The crew handles maneuvering, weapons targeting, shields, etc. while the captain requests these actions.
-      </p>
-      <p>Sample Command List:
-        <br>"Helm, plot a course to [Asteroid 02]"
-        <br>"Tactical, battle stations"
-        <br>"Comms, hail [Neutral Ship 05]"
-      </p>
-    </div>
-    <div class="panel panelBlog">
-      <h2 class="headerBlog">At the Foot of the Hill (10/26/2017)</h2>
-      <hr>
-      <p>
-        In the aftermath of my first game project, Firewall Penitentiary, I'm left with a number of lessons regarding development:
-      </p>
-      <p>
-        First, I realize I should have handled all of the synchronization physics (players killed, ball drops, projectile locations, etc.) on the Server side of the game. The reason I didn't was due to the fact that F.P. was developed first as a single player game and then, once that version was stable, was upgraded to a multiplayer version. The timeframe for the project was two weeks and I was handling technologies I'd never used before, including <a class="inlineLink" href="http://socket.io/" target="blank_">Socket.io</a> and the <a class="inlineLink" href="http://phaser.io/" target="blank_">Phaser Game Engine</a>, so I wasn't even sure what was possible. (As a note, I love Phaser and would definitely use it again on 2d projects with Javascript. It's strongly supported by a great community who have run into just about every bug out there.)
-      </p>
-      <p>
-        Second, as team lead I should have delegated more but, due to the timeframe, I handled more and delegated less. Why? My team was assigned to me and I had no idea of their skills or experience before we began. I had to just assign tasks and hope people could keep up. I started off small, asking team members to research how to perform certain actions with the Phaser Engine and used their results as a way to gauge what their next task should be. I kept up this process throughout the project while I worked on the more complex algorithms.
-      </p>
-      <p>
-        As it turned out, none of them had game development experience but they gave it their all anyway. We held regular meetings and there were several midnight stress tests I'll remember for years to come. Regardless of how we got there, we were there and our first game was done.
-      </p>
+      <div class="col s12 m2 right">
+        <div class="panel panelFixed">
+          <h2 class="flow-text">Contact me via...</h2>
+          <a href="mailto:ms1@thousandstorms.com?Subject=Making contact"><img class="imgHex responsive-img" src="../assets/graphics/email.png" alt="Email"></a>
+          <a href="https://github.com/LordSorcerer/ " target="blank_"><img class="imgHex responsive-img" src="../assets/graphics/github.png" alt="GitHub"></a>
+          <a href="https://www.linkedin.com/in/matthew-sullivan-63870783/" target="blank_"><img class="imgHex responsive-img" src="../assets/graphics/linkedin.png" alt="LinkedIn"></a>
+        </div>
+      </div>
+  </header>
+  <main class="container fadeIn">
+    <div class="row">
+      <div class="col s12 m10 left">
+        <div class="panel panelBlog">
+          <h2 class="headerBlog">And we're ... done? (12/04/2017)</h2>
+          <hr>
+          <img class="responsive-img imgBlog left" src="../assets/graphics/fotr1.png" alt="Flight of the Rubicon Image 1">
+          <p class="flow-text align-left">
+            The past two weeks have flown by. The project came together quickly, broke and was fixed a few times but all the parts are working at this point! The "game" has basic functionality in that you can log in, fly around in three dimensions and shoot down fighter craft. I even added in a basic AI for the KillSat turrets near Mars. Right now they simply turn to face whatever enters their detection range until it leaves, then they search for a new target. I've noticed that they also turn to "look at" the player's Proton Cannon shells as they fly by. Something to work on.
+          </p>
+          <p class="flow-text align-left">
+            This project is definitely going to be a work in progress for a while because I have to focus on Web development in the near future but I'll come back to <a class="inlineLink" href="http://alexcpeterson.com/spacescape/" target="blank_">Flight of the Rubicon</a> at some point.
+          </p>
+        </div>
+      </div>
+      <div class="col s12 m10 left">
+        <div class="panel panelBlog">
+          <h2 class="headerBlog">Unity is Amazing (11/22/2017)</h2>
+          <hr>
+          <img class="responsive-img imgBlog right" src="../assets/graphics/fotr3.png" alt="Flight of the Rubicon Image 3">
+          <p class="flow-text align-left">
+            I've only been working with the Unity engine for a couple of days but I already have models moving around the screen via keyboard commands. It turns out the documentation is great and there are helpful tutorials for many, many aspects of game development.
+          </p>
+          <p class="flow-text align-left">
+            I've also managed to get the "skybox" (or "starbox" since it's a space sim) working now. I found a program called <a class="inlineLink" href="http://alexcpeterson.com/spacescape/" target="blank_">Spacescape</a> that takes a starfield image and splits it into the six sides of a cube. Granted, it's not a perfect solution because a cube isn't a sphere but with the timeframe of this project I'm not going to be picky. Thank you, Alex Peterson, for making Spacescape!
+          </p>
+          <p class="flow-text align-left">
+            I've noticed that Unity uses a very modular, OOP style setup where each in-game object has scripts attached to it so that they can be reused in other parts of the game or even other games entirely. I'm pretty impressed.
+          </p>
+        </div>
+      </div>
+      <div class="col s12 m10 left">
+        <div class="panel panelBlog">
+          <h2 class="headerBlog">Project Planning (11/01/2017)</h2>
+          <hr>
+          <p class="flow-text align-left">
+            My next project is coming up at the end of the week and I need to begin planning. I know I want to do a 3d game but this time I'm on my own. It's going to be a challenge.
+          </p>
+          <p class="flow-text align-left">
+            My initial thought was to design a space-themed game. I've been watching Star Trek: Next Generation on Netflix lately and it made me realize there aren't a lot of (if any) voice-activated spaceship bridge simulations. So let's do this: the player takes the role of a captain on a large ship, not an interceptor. The crew handles maneuvering, weapons targeting, shields, etc. while the captain requests these actions.
+          </p>
+          <p class="flow-text align-left">Sample Command List:
+            <br>"Helm, plot a course to [Asteroid 02]"
+            <br>"Tactical, battle stations"
+            <br>"Comms, hail [Neutral Ship 05]"
+          </p>
+        </div>
+      </div>
+      <div class="col s12 m10 left">
+        <div class="panel panelBlog">
+          <h2 class="headerBlog">At the Foot of the Hill (10/26/2017)</h2>
+          <hr>
+          <p class="flow-text align-left">
+            In the aftermath of my first game project, Firewall Penitentiary, I'm left with a number of lessons regarding development:
+          </p>
+          <p class="flow-text align-left">
+            First, I realize I should have handled all of the synchronization physics (players killed, ball drops, projectile locations, etc.) on the Server side of the game. The reason I didn't was due to the fact that F.P. was developed first as a single player game and then, once that version was stable, was upgraded to a multiplayer version. The timeframe for the project was two weeks and I was handling technologies I'd never used before, including <a class="inlineLink" href="http://socket.io/" target="blank_">Socket.io</a> and the <a class="inlineLink" href="http://phaser.io/" target="blank_">Phaser Game Engine</a>, so I wasn't even sure what was possible. (As a note, I love Phaser and would definitely use it again on 2d projects with Javascript. It's strongly supported by a great community who have run into just about every bug out there.)
+          </p>
+          <p class="flow-text align-left">
+            Second, as team lead I should have delegated more but, due to the timeframe, I handled more and delegated less. Why? My team was assigned to me and I had no idea of their skills or experience before we began. I had to just assign tasks and hope people could keep up. I started off small, asking team members to research how to perform certain actions with the Phaser Engine and used their results as a way to gauge what their next task should be. I kept up this process throughout the project while I worked on the more complex algorithms.
+          </p>
+          <p class="flow-text align-left">
+            As it turned out, none of them had game development experience but they gave it their all anyway. We held regular meetings and there were several midnight stress tests I'll remember for years to come. Regardless of how we got there, we were there and our first game was done.
+          </p>
+        </div>
+      </div>
     </div>
   </main>
   <div class="footerWrapper">

@@ -5,200 +5,235 @@
   <title>Matthew Sullivan</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" type="text/css" href="../assets/css/normalize.css">
+  <link rel="stylesheet" type="text/css" href="../assets/css/materialize.min.css">
   <link rel="stylesheet" type="text/css" href="../assets/css/portfolio.css">
   <link href="https://fonts.googleapis.com/css?family=Amarante" rel="stylesheet">
 </head>
 
 <body>
-  <div class="headerWrapper">
-    <header>
-      <div class="panel">
-        <h1>Thousandstorms.com</h1>
-        <hr>
-        <h2>Projects</h2>
-        <div class="btnWrapper">
-          <a href="./index.html">
-            <button class="btnLarge">
-              <h3>About</h3>
-            </button>
-          </a>
-          <a href="./blog.html">
-            <button class="btnLarge">
-              <h3>Blog</h3>
-            </button>
-          </a>
-          <a href="./projects.html">
-            <button class="btnLarge">
-              <h3>Projects</h3>
-            </button>
-          </a>
+  <header class="container">
+    <div class="row">
+      <div class="col s12 m10">
+        <div class="panel">
+          <img class="responsive-img imgLogo" src="../assets/graphics/tstormsLogo.png">
+          <hr>
+          <div class="hide-on-small-only">
+            <a href="./index.html">
+              <button class="btnLarge">
+                <h3 class="flow-text">About</h3>
+              </button>
+            </a>
+            <a href="./blog.html">
+              <button class="btnLarge">
+                <h3 class="flow-text">Blog</h3>
+              </button>
+            </a>
+            <a href="./projects.html">
+              <button class="btnLarge">
+                <h3 class="flow-text">Projects</h3>
+              </button>
+            </a>
+          </div>
         </div>
       </div>
-    </header>
-  </div>
-  <main class="wrapper fadeIn">
-    <div class="panel panelProject">
-      <h1>Major Projects</h1>
-      <div class="wrapper">
-        <div class="projectImageLarge">
-          <img class="projectImage" src="../assets/graphics/fp1.png">
-          <p class="projectLabel">
-            <br>Firewall Penitentiary
-            <br>
-            <br>In the near future, due to overpopulation and resource scarcity, the criminal justice system will receive an overhaul. Career criminals will be held in "virtual reality" prisons and made to fight to the death in simulated games.
-            <br>
-            <br>
-            <br>
-            <a href="https://github.com/LordSorcerer/firewall-penitentiary" target="_blank">
-              <button class="btnLarge">
-                <p>View Code</p>
-              </button>
-            </a>
-            <a href="https://firewall-penitentiary.herokuapp.com" target="_blank">
-              <button class="btnLarge">
-                <p>View Demo</p>
-              </button>
-            </a>
-          </p>
+      <div class="col s12 m2 right">
+        <div class="panel panelFixed">
+          <h2 class="flow-text">Contact me via...</h2>
+          <a href="mailto:ms1@thousandstorms.com?Subject=Making contact"><img class="imgHex responsive-img" src="../assets/graphics/email.png" alt="Email"></a>
+          <a href="https://github.com/LordSorcerer/ " target="blank_"><img class="imgHex responsive-img" src="../assets/graphics/github.png" alt="GitHub"></a>
+          <a href="https://www.linkedin.com/in/matthew-sullivan-63870783/" target="blank_"><img class="imgHex responsive-img" src="../assets/graphics/linkedin.png" alt="LinkedIn"></a>
         </div>
-        <div class="projectImageLarge">
-          <img class="projectImage" src="../assets/graphics/fotr0.png">
-          <p class="projectLabel">
-            <br>Flight of the Rubicon (Work in Progress)
-            <br>
-            <br>The year is 2161CE.  Mankind has colonized most of the solar system and the homeworld exerts firm control over the colonies on Venus, Mars and the moons of Jupiter.  Scientists on the red planet, however, have other ideas and Project Rubicon may very well change the course of the coming war.
-            <br>
-            <br>
-            <a href="https://github.com/LordSorcerer/Flight-of-the-Rubicon" target="_blank">
-              <button class="btnLarge">
-                <p>View Code</p>
-              </button>
-            </a>
-           <!-- Not active yet.  Keep as placeholder. <a href="https://github.com/LordSorcerer/Flight-of-the-Rubicon/blob/master/FotR.zip" target="_blank">
+      </div>
+  </header>
+  <main class="fadeIn container">
+    <div class="row">
+      <div class="col s12 m10">
+        <div class="panel">
+          <h1>Major Projects</h1>
+          <div class="container">
+            <div class="row">
+              <div class="col s12">
+                <div class="projectImageLarge">
+                  <img class="projectImage responsive-img" src="../assets/graphics/fp1.png">
+                   <p class="projectLabel flow-text">
+                    <br>Firewall Penitentiary
+                    <br>
+                    <br>In the near future, due to overpopulation and resource scarcity, the criminal justice system will receive an overhaul. Career criminals will be held in "virtual reality" prisons and made to fight to the death in simulated games.
+                    <br>
+                    <br>
+                    <a href="https://github.com/LordSorcerer/firewall-penitentiary" target="_blank">
+                      <button class="btnLarge">
+                        <p>View Code</p>
+                      </button>
+                    </a>
+                    <a href="https://firewall-penitentiary.herokuapp.com" target="_blank">
+                      <button class="btnLarge">
+                        <p>View Demo</p>
+                      </button>
+                    </a>
+                  </p>
+                </div>
+              </div>
+              <div class="col s12">
+                <div class="projectImageLarge">
+                  <img class="projectImage responsive-img" src="../assets/graphics/fotr0.png">
+                  <p class="projectLabel flow-text">
+                    <br>Flight of the Rubicon (Work in Progress)
+                    <br>
+                    <br>The year is 2161CE. Mankind has colonized most of the solar system and the homeworld exerts firm control over the colonies on Venus, Mars and the moons of Jupiter. Scientists on the red planet, however, have other ideas and Project Rubicon may very well change the course of the coming war.
+                    <br>
+                    <br>
+                    <a href="https://github.com/LordSorcerer/Flight-of-the-Rubicon" target="_blank">
+                      <button class="btnLarge">
+                        <p>View Code</p>
+                      </button>
+                    </a>
+                    <!-- Not active yet.  Keep as placeholder. <a href="https://github.com/LordSorcerer/Flight-of-the-Rubicon/blob/master/FotR.zip" target="_blank">
              <button class="btnLarge">
                <p>Download</p>
              </button>
            </a> -->
-          </p>
-        </div>
-        <div class="projectImageLarge">
-          <img class="projectImage" src="../assets/graphics/aa1.png">
-          <p class="projectLabel">
-            <br>Adventure Awaits
-            <br>
-            <br>A teaching tool designed to encourage creative writing, this application allows multiple authors to create a branching storyline in the tradition of the paperback "choose-your-own-adventure" novels of the 1980's
-            <br>
-            <br>
-            <br>
-            <a href="https://github.com/MountainBed/Adventure-Awaits" target="_blank">
-              <button class="btnLarge">
-                <p>View Code</p>
-              </button>
-            </a>
-            <a href="https://desolate-thicket-91586.herokuapp.com/" target="_blank">
-              <button class="btnLarge">
-                <p>View Demo</p>
-              </button>
-            </a>
-          </p>
-        </div>
-      </div>
-    </div>
-    <div class="panel">
-      <h1>Minor Projects</h1>
-      <div class="wrapper">
-        <div class="projectImageSmall">
-          <img class="projectImage" src="../assets/graphics/tradanAir1.png">
-          <p class="projectLabel">Tradan Air
-            <br>
-            <br>Travel-themed image search using Giphy API.
-            <br>
-            <br>
-            <a href="https://github.com/LordSorcerer/tradan-air" target="blank_">
-              <button class="btnSmall">
-                <p>View Code</p>
-              </button>
-            </a>
-            <a href="https://lordsorcerer.github.io/tradan-air/index.html" target="blank_">
-              <button class="btnSmall">
-                <p>View Demo</p>
-              </button>
-            </a>
-          </p>
-        </div>
-        <div class="projectImageSmall">
-          <img class="projectImage" src="../assets/graphics/bleakFuture1.png">
-          <p class="projectLabel">Bleak Future
-            <br>
-            <br>The classic game of Hangman, reimagined for the 21st century.
-            <br>
-            <br>
-            <a href="https://github.com/LordSorcerer/Hangman-Game" target="blank_">
-              <button class="btnSmall">
-                <p>View Code</p>
-              </button>
-            </a>
-            <a href="https://lordsorcerer.github.io/Hangman-Game/" target="blank_">
-              <button class="btnSmall">
-                <p>View Demo</p>
-              </button>
-            </a>
-          </p>
-        </div>
-        <div class="projectImageSmall">
-          <img class="projectImage" src="../assets/graphics/tradanRails1.png">
-          <p class="projectLabel">Tradan Rails Co.
-            <br>
-            <br>Train scheduler app using Firebase and Ajax.
-            <br>
-            <br>
-            <a href="https://github.com/LordSorcerer/trains" target="blank_">
-              <button class="btnSmall">
-                <p>View Code</p>
-              </button>
-            </a>
-            <a href="https://lordsorcerer.github.io/trains/" target="blank_">
-              <button class="btnSmall">
-                <p>View Demo</p>
-              </button>
-            </a>
-          </p>
-        </div>
-        <div class="projectImageSmall">
-          <img class="projectImage" src="../assets/graphics/friendFinder1.png">
-          <p class="projectLabel">Friend Finder
-            <br>
-            <br>Take our survey and meet your new friend today!
-            <br>
-            <br>
-            <a href="https://github.com/LordSorcerer/friend-finder" target="blank_">
-              <button class="btnSmall">
-                <p>View Code</p>
-              </button>
-            </a>
-            <a href="https://infinite-plains-62467.herokuapp.com/" target="blank_">
-              <button class="btnSmall">
-                <p>View Demo</p>
-              </button>
-            </a>
-          </p>
-        </div>
-        <div class="projectImageSmall">
-          <img class="projectImage" src="../assets/graphics/smallMart0.png">
-          <p class="projectLabel">SmallMart
-            <br>
-            <br>MySQL-based store inventory manager utilizing a CLI.
-            <br>
-            <br>
-            <a href="https://github.com/LordSorcerer/bamazon" target="blank_">
-              <button class="btnSmall">
-                <p>View Code</p>
-              </button>
-            </a>
-          </p>
+                  </p>
+                </div>
+              </div>
+              <div class="col s12">
+                <div class="projectImageLarge">
+                  <img class="projectImage responsive-img" src="../assets/graphics/aa1.png">
+                  <p class="projectLabel flow-text">
+                    <br>Adventure Awaits
+                    <br>
+                    <br>A teaching tool designed to encourage creative writing, this application allows multiple authors to create a branching storyline in the tradition of the paperback "choose-your-own-adventure" novels of the 1980's
+                    <br>
+                    <br>
+                    <br>
+                    <a href="https://github.com/MountainBed/Adventure-Awaits" target="_blank">
+                      <button class="btnLarge">
+                        <p>View Code</p>
+                      </button>
+                    </a>
+                    <a href="https://desolate-thicket-91586.herokuapp.com/" target="_blank">
+                      <button class="btnLarge">
+                        <p>View Demo</p>
+                      </button>
+                    </a>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
-    </div>
+      <div class="row">
+        <div class="col s12 m10 left">
+          <div class="panel">
+            <h1>Minor Projects</h1>
+            <container class="container">
+              <div class="row">
+                <div class="col s6 m6">
+                  <div class="projectImageSmall">
+                    <img class="projectImage" src="../assets/graphics/tradanAir1.png">
+                    <p class="projectLabel"><br>Tradan Air
+                      <br>
+                      <br>Travel-themed image search using Giphy API.
+                      <br>
+                      <br>
+                      <a href="https://github.com/LordSorcerer/tradan-air" target="blank_">
+                        <button class="btnSmall">
+                          <p>View Code</p>
+                        </button>
+                      </a>
+                      <a href="https://lordsorcerer.github.io/tradan-air/index.html" target="blank_">
+                        <button class="btnSmall">
+                          <p>View Demo</p>
+                        </button>
+                      </a>
+                    </p>
+                  </div>
+                </div>
+                <div class="col s6 m6">
+                  <div class="projectImageSmall">
+                    <img class="projectImage" src="../assets/graphics/bleakFuture1.png">
+                    <p class="projectLabel"><br>Bleak Future
+                      <br>
+                      <br>The classic game of Hangman, reimagined for the 21st century.
+                      <br>
+                      <br>
+                      <a href="https://github.com/LordSorcerer/Hangman-Game" target="blank_">
+                        <button class="btnSmall">
+                          <p>View Code</p>
+                        </button>
+                      </a>
+                      <a href="https://lordsorcerer.github.io/Hangman-Game/" target="blank_">
+                        <button class="btnSmall">
+                          <p>View Demo</p>
+                        </button>
+                      </a>
+                    </p>
+                  </div>
+                </div>
+                <div class="col s6 m6">
+                  <div class="projectImageSmall">
+                    <img class="projectImage" src="../assets/graphics/tradanRails1.png">
+                    <p class="projectLabel"><br>Tradan Rails Co.
+                      <br>
+                      <br>Train scheduler app using Firebase and Ajax.
+                      <br>
+                      <br>
+                      <a href="https://github.com/LordSorcerer/trains" target="blank_">
+                        <button class="btnSmall">
+                          <p>View Code</p>
+                        </button>
+                      </a>
+                      <a href="https://lordsorcerer.github.io/trains/" target="blank_">
+                        <button class="btnSmall">
+                          <p>View Demo</p>
+                        </button>
+                      </a>
+                    </p>
+                  </div>
+                </div>
+                <div class="col s6 m6">
+                  <div class="projectImageSmall">
+                    <img class="projectImage" src="../assets/graphics/friendFinder1.png">
+                    <p class="projectLabel flow-text"><br>Friend Finder
+                      <br>
+                      <br>Take our survey and meet your new friend today!
+                      <br>
+                      <br>
+                      <a href="https://github.com/LordSorcerer/friend-finder" target="blank_">
+                        <button class="btnSmall">
+                          <p>View Code</p>
+                        </button>
+                      </a>
+                      <a href="https://infinite-plains-62467.herokuapp.com/" target="blank_">
+                        <button class="btnSmall">
+                          <p>View Demo</p>
+                        </button>
+                      </a>
+                    </p>
+                  </div>
+                </div>
+                <div class="col s6 m6">
+                  <div class="projectImageSmall">
+                    <img class="projectImage" src="../assets/graphics/smallMart0.png">
+                    <p class="projectLabel"><br>SmallMart
+                      <br>
+                      <br>MySQL-based store inventory manager utilizing a CLI.
+                      <br>
+                      <br>
+                      <a href="https://github.com/LordSorcerer/bamazon" target="blank_">
+                        <button class="btnSmall">
+                          <p>View Code</p>
+                        </button>
+                      </a>
+                    </p>
+                  </div>
+                  </col>
+                </div>
+              </div>
+          </div>
+        </div>
+        </container>
   </main>
   <div class="footerWrapper">
     <footer>
